@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <link rel="apple-touch-icon" sizes="76x76" href="/img/apple-icon.png">
-    <link rel="icon" type="image/png" href="/img/favicon.png">
+    <link rel="icon" type="image/png" href="./img/favicon.ico">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <title>Natural Language-Based Software Engineering</title>
     <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no' name='viewport' />
@@ -134,7 +134,7 @@
 
                 <p>We are pleased to announce the third edition of the NLBSE'25 tool competition on <b>code comment classification</b>; an important task in code comment management and prioritization.</p>
 
-                <p>You are invited to participate to the tool competitions.</p>
+                <!--<p>You are invited to participate to the tool competitions.</p>-->
 
                 <!--<h3 id="issue-report-classification">Issue Report Classification</h3>
                 <p>TBD</p>-->
@@ -177,7 +177,20 @@
                <p>The issue report classification competition is organized by: <b>Rafael Kallis</b> (<a href="mailto:rk@rafaelkallis.com">rk@rafaelkallis.com</a>) and <b>Giuseppe Colavito</b> (<a href="mailto:giuseppe.colavito@uniba.it">giuseppe.colavito@uniba.it</a>).</p>
               -->
                <h3 id="code-comment-classification">Code Comment Classification</h3>
-               <p>TBD</p>
+               <p>The tool competition consists of building and testing a set of <b>three multi-label classification models</b> for class comments in each of target programming languages (Java, Python, Pharo).</p>
+
+                <p>We provide a dataset of <b>14,875</b> code comment sentences belonging to <b>19</b> categories (7 for Java, 5 for Python, and 7 for Pharo), and three baseline classifiers based on Sentence Transformers (<a href="https://github.com/huggingface/setfit">SetFit</a>).</p>
+
+                <p>You must train, tune, and evaluate your models oun the provided data.</p>
+                <p>We are looking forward to the solutions that outperform our baseline models.</p>
+
+                <p>Detailed instructions about the competition (data, rules, baseline, results, etc.) can be found in our <a href="https://github.com/nlbse2025/code-comment-classification">GitHub repository</a> and a <a href="https://colab.research.google.com/drive/1GhpyzTYcRs8SGzOMH3Xb6rLfdFVUBN0P#scrollTo=S5oC0iUlxHzz">Google Colab notebook</a>.</p>
+
+               <h6>Updates</h6>
+               <p>Compared to the <a href="https://nlbse2024.github.io/tools/">2024 competition</a>, we have moved from binary classification per comment category to multi-label classification per programming language.</p>
+
+                <p>The code comment classification competition is organized by: <b>Pooja Rani</b> (<a href="mailto:rani@ifi.uzh.ch">rani@ifi.uzh.ch</a>), <b>Ali Al-Kaswan</b> (<a href="mailto:a.al-kaswan@tudelft.nl">a.al-kaswan@tudelft.nl</a>), <b>Nataliia Stulova</b> (<a href="mailto:nata.stulova@macpaw.com">nata.stulova@macpaw.com</a>), and Giuseppe Colavito (<a href="mailto:giuseppe.colavito@uniba.it">giuseppe.colavito@uniba.it</a>).</p>
+
                <!--<p>
                 The code comment classification competition consists of building and testing a set of <b>binary classifiers</b> to classify class comment sentences as belonging to one or more categories representing the types of information that a sentence is conveying.
                </p>
@@ -222,7 +235,31 @@
 
 
               <h3>Participation</h3>
-              <p>TBD</p>
+              <p>To participate in the competition, you must train, tune and evaluate your models using the provided training and test sets.</p>
+
+              <p>Additionally, you must write a paper (2-4 pages) describing:</p>
+
+              <ul>
+                <li>The architecture and details of the classification models;</li>
+                <li>The procedure used to pre-process the data;</li>
+                <li>The procedure used to tune the classifiers on the training sets;</li>
+                <li>The results of your classifiers on the test sets;</li>
+                <li>A link to the code/tool with proper documentation on how to run it and replicate the results.</li>
+              </ul>
+
+              <p>Submit the paper by the deadline using our submission form (link to be added).</p>
+
+              <p>All submissions must conform to the <a href="https://conf.researchr.org/track/icse-2025/icse-2025-research-track#submission-process">ICSE'25 formatting and submission instructions</a> and do **not** need to be double-blinded.</p>
+
+
+
+
+
+
+
+
+
+
               <!--<p>
                 To participate in any of the competitions, you must train, tune and evaluate your models using the provided training and test sets of the respective competition.
               </p>
@@ -243,8 +280,27 @@
 
               <p>Participation in both competitions is allowed, but requires a <b>distinct</b> paper for each submission.</p>
             -->
-              <h3>Submission acceptance and competition</h3>
-              <p>TBD</p>
+              <h3>Submission acceptance</h3>
+              
+              <p>Submissions will be evaluated and accepted based on <b>correctness</b> and <b>reproducibility</b>, defined by the following criteria:</p>
+
+              <ul>
+                <li>Clarity and detail of the paper content;</li>
+                <li>Availability of the code/tool, including the training/tuning/evaluation pipeline, released as open-source;</li>
+                <li>Correct training/tuning/evaluation of your code/tool on the provided data;</li>
+                <li>Correct report of the metrics and results;</li>
+                <li>Clarity of the code documentation.</li>
+              </ul>
+
+              <p>We will use a formula to rank the competition submissions and determine a winner, see details in the <a href="https://colab.research.google.com/drive/1GhpyzTYcRs8SGzOMH3Xb6rLfdFVUBN0P#scrollTo=S5oC0iUlxHzz">Google Colab notebook</a>.</p>
+
+              <p>The accepted submissions will be <b>published at the workshop proceedings</b>.</p>
+
+
+
+
+
+
 							<!--<p>Submissions will be evaluated and accepted based on <b>correctness</b> and <b>reproducibility</b>, defined by the following criteria:</p>
 								<ul>
 								   <li>Clarity and detail of the paper content;</li>
@@ -277,7 +333,35 @@
               </p> -->
 
               <h3 id="citing">Citing relevant work</h3>
-              <p>TBD</p>
+              
+              <p>Please cite if participating:</p>
+              
+              <pre><code class="language-tex">@article{rani2021,
+                title={How to identify class comment types? A multi-language approach for class comment classification},
+                author={Rani, Pooja and Panichella, Sebastiano and Leuenberger, Manuel and Di Sorbo, Andrea and Nierstrasz, Oscar},
+                journal={Journal of systems and software},
+                volume={181},
+                pages={111047},
+                year={2021},
+                publisher={Elsevier}
+              }</code></pre>
+              
+              <pre><code class="language-tex">@INPROCEEDINGS{AlKaswan2023,
+                author={Al-Kaswan, Ali and Izadi, Maliheh and Van Deursen, Arie},
+                booktitle={2023 IEEE/ACM 2nd International Workshop on Natural Language-Based Software Engineering (NLBSE)}, 
+                title={STACC: Code Comment Classification using SentenceTransformers}, 
+                year={2023},
+                pages={28-31}
+              }</code></pre>
+              
+              <pre><code class="language-tex">@inproceedings{pascarella2017,
+                title={Classifying code comments in Java open-source software systems},
+                author={Pascarella, Luca and Bacchelli, Alberto},
+                booktitle={2017 IEEE/ACM 14th International Conference on Mining Software Repositories (MSR)},
+                year={2017},
+                organization={IEEE}
+              }</code></pre>
+              
               <!--<p>
                 Since you will be using the dataset and possibly the original work behind the dataset, please cite the following references in your paper:
               </p>
@@ -400,22 +484,32 @@
                         </div>
                         <div class="col-md-4">
                             <h4  class="subsection">Important Dates</h4>
-                            <p>TBD</p>
-                            <!--<h6 class="text-primary">Paper/tool submission</h6>
-                            <p><b>December 9, 2023</b></span></p>
+                            
+                            <h6 class="text-primary">Paper/tool submission</h6>
+                            <p><b>December 12, 2024</b></span></p>
                             
                             <h6 class="text-primary">Acceptance notification</h6>
-                            <p><b>December 29, 2023</b></p>
+                            <p><b>January 09, 2025</b></p>
                             
                             <h6 class="text-primary">Camera-ready paper submission</h6>
-                            <p><b>January 25, 2024</b></p>
+                            <p><b>January 30, 2025</b></p>
                             
 
-							All dates are Anywhere on Earth (AoE).-->
+							              All dates are Anywhere on Earth (<a href="https://time.is/Anywhere_on_Earth">AoE</a>).
 
 
                             <h4  class="subsection">Important Links</h4>
-                            <p>TBD</p>
+
+                            <p><a href="https://colab.research.google.com/drive/1GhpyzTYcRs8SGzOMH3Xb6rLfdFVUBN0P#scrollTo=S5oC0iUlxHzz">Google Colab notebook</a></p>
+
+                            <p><a href="https://github.com/nlbse2025/code-comment-classification">GitHub repository</a></p>
+
+                          
+
+                            
+                            
+
+
                            <!-- <p><a href="https://github.com/nlbse2025/issue-report-classification">Issue report classification repository</a></p>
                         -->
 
