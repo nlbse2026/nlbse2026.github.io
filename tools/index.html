@@ -120,248 +120,94 @@
                     <div class="row">
                         <div class="col-md-8 ml-auto mr-auto text-left">
 
-                <h2 class="title">Tool Competition</h2>
-
-                <!--Tool competition slides <a href=""> <img src="../img/pdf.png" style="width:20px;height:20px;"> </a>-->
-                
-                <h3>Introduction</h3>
-
-                <p>NLP-based approaches and tools have been proposed to improve the efficiency of software engineers, processes, and products, by automatically processing natural language artifacts (issues, emails, commits, etc.).</p>
-
-                <p>We believe that the availability of accurate tools is becoming increasingly necessary to improve Software Engineering (SE) processes. Two important processes are (i) issue management and prioritization and (ii) code comment classification where developers have to understand, classify, prioritize, assign, etc. incoming issues and code comments reported by end-users and developers.</p>
-
-							  <!--<p>We are pleased to announce the third edition of the NLBSE'25 tool competition on <b>issue report classification</b> and, for the second time on <b>code comment classification</b>; two important tasks in issue and code comment management and prioritization.</p>-->
-
-                <p>We are pleased to announce the third edition of the NLBSE'25 tool competition on <b>code comment classification</b>; an important task in code comment management and prioritization.</p>
-
-                <!--<p>You are invited to participate to the tool competitions.</p>-->
-
-                <!--<h3 id="issue-report-classification">Issue Report Classification</h3>
-                <p>TBD</p>-->
-                <!--<p>
-                  The issue report classification competition consists of building and assessing a set of
-                  <b>multi-class classification models</b> to classify issue reports
-                  as belonging to one category representing the type of information they convey.
-                </p>
-                <p>
-                  We provide a dataset encompassing <b>3 thousand</b> labeled issue reports
-                  (as bugs, enhancements, and questions) extracted from 5 real open-source projects.
-                  You are invited to leverage this dataset to evaluate your proposed approach
-                  and compare your achieved results against our baselines (based on Sentence Transformers).
-                </p>
-                <p>
-                  You must train, tune and evaluate your multi-class classification models
-			            using the provided training and test sets.
-			            To access these datasets as well as the competition's rules and baselines,
-			            please check out our
-			            <b><a href="https://github.com/nlbse2025/issue-report-classification">repository</a></b>.
-		            </p>
-
-                <h6>Competition overview</h6>
-
-                <p>The submissions will be ranked based on the average multi-class F1 score achieved by the proposed classifiers on the test sets, as indicated in the papers.</p>
-
-							  <p>The submission with the highest average F1 score will be the winner of the competition.</p>
-
-                <h6>Updates</h6>
-
-                <p>Compared to the <a href="https://nlbse2023.github.io/tools/">2023 version</a>
-                  of the issue report competition, we have made the following changes:
-                </p>
-                <ul>
-                  <li>focus on few-shot learning,</li>
-                  <li>small multi repo dataset,</li>
-                  <li>SentenceTransformer baseline.</li>
-               </ul>
-
-               <p>The issue report classification competition is organized by: <b>Rafael Kallis</b> (<a href="mailto:rk@rafaelkallis.com">rk@rafaelkallis.com</a>) and <b>Giuseppe Colavito</b> (<a href="mailto:giuseppe.colavito@uniba.it">giuseppe.colavito@uniba.it</a>).</p>
-              -->
-               <h3 id="code-comment-classification">Code Comment Classification</h3>
-               <p>The tool competition consists of building and testing a set of <b>three multi-label classification models</b> for class comments in each of target programming languages (Java, Python, Pharo).</p>
-
-                <p>We provide a dataset of <b>14,875</b> code comment sentences belonging to <b>19</b> categories (7 for Java, 5 for Python, and 7 for Pharo), and three baseline classifiers based on Sentence Transformers (<a href="https://github.com/huggingface/setfit">SetFit</a>).</p>
-
-                <p>You must train, tune, and evaluate your models oun the provided data.</p>
-                <p>We are looking forward to the solutions that outperform our baseline models.</p>
-
-                <p>Detailed instructions about the competition (data, rules, baseline, results, etc.) can be found in our <a href="https://github.com/nlbse2026/code-comment-classification">GitHub repository</a> and a <a href="https://colab.research.google.com/drive/1GhpyzTYcRs8SGzOMH3Xb6rLfdFVUBN0P#scrollTo=S5oC0iUlxHzz">Google Colab notebook</a>.</p>
-
-               <h6>Updates</h6>
-               <p>Compared to the <a href="https://nlbse2024.github.io/tools/">2024 competition</a>, we have moved from binary classification per comment category to multi-label classification per programming language.</p>
-
-                <p>The code comment classification competition is organized by: <b>Pooja Rani</b> (<a href="mailto:rani@ifi.uzh.ch">rani@ifi.uzh.ch</a>), <b>Ali Al-Kaswan</b> (<a href="mailto:a.al-kaswan@tudelft.nl">a.al-kaswan@tudelft.nl</a>), <b>Nataliia Stulova</b> (<a href="mailto:nata.stulova@macpaw.com">nata.stulova@macpaw.com</a>), and <b>Giuseppe Colavito</b> (<a href="mailto:giuseppe.colavito@uniba.it">giuseppe.colavito@uniba.it</a>).</p>
-
-               <!--<p>
-                The code comment classification competition consists of building and testing a set of <b>binary classifiers</b> to classify class comment sentences as belonging to one or more categories representing the types of information that a sentence is conveying.
-               </p>
-               <p>
-                For the competition, we provide a dataset of <b>82089</b> class comment sentences and <b>19</b> categories, and a baseline classifier based on the Transformer model. Participants will propose their classifiers for this task to outperform the baselines.
-               </p>
-
-               <p>
-                  You must train, tune, and evaluate your classification model using the provided training and test sets.
-                  Detailed instructions about the competition (data, rules, baseline, results, etc.) can be found in our <a href="https://github.com/nlbse2025/code-comment-classification/tree/main">repository</a> and <a href="https://colab.research.google.com/drive/1GhpyzTYcRs8SGzOMH3Xb6rLfdFVUBN0P?usp=sharing">notebook</a>.
-                </p>
-
-                <h6>Updates</h6>
-
-                <p>Compared to the <a href="https://nlbse2023.github.io/tools/">2023 version</a>
-                  of the code comment classification competition, we have made the following changes:
-                </p>
-                <ul>
-                  <li>We have extended the dataset of code comments for Java projects, and </li>
-                  <li>The <a href="https://huggingface.co/collections/AISE-TUDelft/stacc-65254a9b4d1fadc125a731dc">baseline</a> is the approach by <a href="https://github.com/AISE-TUDelft/STACC">Al-Kaswan et al.</a>, which is based on Sentence Transformers and was the winner of the 2023 competition.</li>
-               </ul>
-
-		<p>The code comment classification competition is organized by: <b>Pooja Rani</b> (<a href="mailto:rani@ifi.uzh.ch">rani@ifi.uzh.ch</a>), <b>Oscar Chaparro</b> (<a href="mailto:oscarch@wm.edu">oscarch@wm.edu</a>), <b>Luca Pascarella</b> (<a href="mailto:lpascarella@ethz.ch">lpascarella@ethz.ch</a>), and <b>Ali Al-Kaswan</b> (<a href="mailto:a.al-kaswan@tudelft.nl">a.al-kaswan@tudelft.nl</a>).</p>
-              -->
+                <h2 class="title">Tool Competition - SKill Classification </h2>
 
 
-              
+<h3>Competition Overview</h3>
+<p>The 2026 competition consists of building and assessing multi‑label classifiers that predict, for each issue, the set of domains and sub‑domains representing the skills required to solve it.</p>
 
-              <!-- <h6>Competition overview</h6> -->
+<h6>Dataset</h6>
+<p>We release a dataset mined from 7,245 merged pull requests across 11 popular Java repositories (57,206 source files; 59,644 methods; 13,097 classes) annotated with 217 skill labels composed by domain/sub‑domains. The full corpus (inputs and gold‑labels) is shipped as an SQLite database (skillscope_data.db) for easy reproducibility.</p>
 
-               <!-- <p>
-                Since participants will submit a set of binary classifiers, the submissions will be ranked based on the number of classifiers that outperform the baselines by F1 score. Such performance must be computed on the test set.
-               </p> -->
+<ul>
+  <li><code>Ready-made</code> Table: Inside the database you will find a table named nlbse_tool_competition_data_by_issue that joins each pull request's textual and code‑context features with its canonical domain/sub‑domain labels per issue. There is also a view vw_nlbse_tool_competition_data_by_file that labels each filename/function associated with each issue.</li>
+  <li>The <code>nlbse_tool_competition_data_by_issue</code> table contains a column for each domain and subdomain with an integer count of the number of matching APIs found for that issue. A value greater than zero indicates that domain/subdomain is present in the issue.</li>
+  <li>The <code>vw_nlbse_tool_competition_data_by_file</code> is present for convenience purposes only and will not be used in evaluation of the model.</li>
+</ul>
 
-               <!-- <p>
-                The submission with the highest count of classifiers with higher F1 scores than the baselines will be the <b>winner of the competition</b>. In the case of ties, the highest average of F1 scores across <b>all 19</b> (7 for Java, 7 for Pharo, and 5 for Python) binary classifiers will declare the winner.
-               </p> -->
+<h6>Additional Data Usage</h6>
+<p>Your model is allowed to use input data that is outside what is given in the database. You may use additional GitHub APIs to fetch more metadata, or download relevant files in an issue for further analysis. However, you must not use any third-party classification engine or the outputs present in skillscope_data.db as direct inputs to the model.</p>
 
-               <!-- <p>
-                The reported F1 scores and count of outperforming classifiers in the paper will be used to rank the participants.
-               </p> -->
+<h6>Baselines</h6>
+<p>Your models will be compared against the SkillScope Random‑Forest + TF‑IDF baselines reported in the paper by evaluating the overall prediction metrics against the issue classifications as recorded in the nlbse_tool_competition_data_by_issue table. The issue classifications are measured by a binary output (true/false) for the best domain and subdomain describing the issue.</p>
 
+<h6>Goal</h6>
+<p>Train, tune and evaluate your models on the provided splits and improve at least one of precision, recall, or micro‑F1 while not decreasing the remaining metrics relative to the best baseline.</p>
 
-              <h3>Participation</h3>
-              <p>To participate in the competition, you must train, tune and evaluate your models using the provided training and test sets.</p>
+<h3>Competition Organizers</h3>
+<p>The skill classification competition is organized by: <b>Fabio Santos</b> (fabio.deabreusantos), <b>Benjamin Carter</b> (BCarter44@my.gcu.edu), and <b>Jacob Penney</b> (jmp458@nau.edu).</p>
 
-              <p>Additionally, you must write a paper (2-4 pages) describing:</p>
+<h3>Submission Acceptance & Competition</h3>
 
-              <ul>
-                <li>The architecture and details of the classification models;</li>
-                <li>The procedure used to pre-process the data;</li>
-                <li>The procedure used to tune the classifiers on the training sets;</li>
-                <li>The results of your classifiers on the test sets;</li>
-                <li>A link to the code/tool with proper documentation on how to run it and replicate the results.</li>
-              </ul>
+    <p>Submissions will first be filtered to ensure they do not lower any of the three core metrics (<strong>precision</strong>, <strong>recall</strong>, <strong>micro‑F1</strong>) compared with the baseline. Among qualifying submissions, ranking is determined by the largest positive improvement in micro‑F1. Ties will be broken by (1) precision, then (2) runtime.</p>
 
-              <p>Submit the paper by the deadline using our <a href="https://docs.google.com/forms/d/1USkKLzKAm3TQZKOzHq8unOLuOHNyJapayMhPTEWHKgo/edit">submission form</a>.</p>
+    <p>Submissions will be judged on:</p>
+    <ul>
+        <li>Clarity and completeness of the paper.</li>
+        <li>Availability and reproducibility of code/tool (open‑source required).</li>
+        <li>Correct use of the provided data split.</li>
+        <li>Correct reporting of metrics.</li>
+        <li>Quality of documentation.</li>
+    </ul>
 
-              <p>All submissions must conform to the <a href="https://conf.researchr.org/track/icse-2026/icse-2026-research-track#submission-process">ICSE'26 formatting and submission instructions</a> and do <b>not</b> need to be double-blinded.</p>
+    <p>Accepted papers will appear in the <strong>NLBSE ’26 proceedings</strong>.</p>
 
+    <h3>Ranking Details</h3>
+    <p>Participants submit a single multi‑label classifier. Rankings proceed in two stages:</p>
+    <ol>
+        <li><strong>Eligibility check:</strong> The submission must not reduce any of precision, recall, or micro‑F1 compared with the baseline.</li>
+        <li><strong>Ordering:</strong> Qualifying submissions are ordered by the greatest positive ∆micro‑F1.</li>
+    </ol>
 
+    <h3>Citing Relevant Work</h3>
+    <p>When using the dataset or referring to the competition, please cite:</p>
+    <pre>
+@inproceedings{carter2025skillscope,
+    title        = {SkillScope: A Tool to Predict Fine-Grained Skills Needed to Solve Issues on GitHub},
+    author       = {Carter, Benjamin C. and Contreras, Jonathan Rivas and Llanes Villegas, Carlos A. and Acharya, Pawan and Utzerath, Jack and Farner, Adonijah O. and Jenkins, Hunter and Johnson, Dylan and Penney, Jacob and Steinmacher, Igor and Gerosa, Marco A. and Santos, Fabio},
+    year         = 2025,
+    booktitle    = {2025 IEEE/ACM International Workshop on Natural Language-Based Software Engineering (NLBSE)},
+    volume       = {},
+    number       = {},
+    pages        = {9--12},
+    doi          = {10.1109/NLBSE66842.2025.00007},
+    keywords     = {Radio frequency;Training;Java;Large language models;Semantics;Retrieval augmented generation;Machine learning;Open source software;Software engineering;Software development management;software engineering;skill categorization;open source software (OSS);machine learning;large language models}
+}
+    </pre>
 
+    <p>Additionally, if you build on the dataset's earlier API‑domain research, please cite the following works:</p>
+    <pre>
+@article{santos2023tag,
+    title        = {Tag that issue: applying API-domain labels in issue tracking systems},
+    author       = {Santos, Fabio and Vargovich, Joseph and Trinkenreich, Bianca and Santos, Italo and Penney, Jacob and Britto, Ricardo and Pimentel, Jo{\~a}o Felipe and Wiese, Igor and Steinmacher, Igor and Sarma, Anita and others},
+    year         = 2023,
+    journal      = {Empirical Software Engineering},
+    publisher    = {Springer},
+    volume       = 28,
+    number       = 5,
+    pages        = 116
+}
 
+@inproceedings{vargovich2023givemelabeledissues,
+    title        = {Givemelabeledissues: An open source issue recommendation system},
+    author       = {Vargovich, Joseph and Santos, Fabio and Penney, Jacob and Gerosa, Marco A and Steinmacher, Igor},
+    year         = 2023,
+    booktitle    = {2023 IEEE/ACM 20th International Conference on Mining Software Repositories (MSR)},
+    pages        = {402--406},
+    organization = {IEEE}
+}
+    </pre>
 
-
-
-
-
-
-              <!--<p>
-                To participate in any of the competitions, you must train, tune and evaluate your models using the provided training and test sets of the respective competition.
-              </p>
-              <p>
-                Additionally, you must write a paper (2-4 pages) describing:
-              </p>
-							<ul>
-							  <li>The architecture and details of the classification models;</li>
-							  <li>The procedure used to pre-process the data;</li>
-							  <li>The procedure used to tune the classifiers on the training sets;</li>
-							  <li>The results of your classifiers on the test sets;</li>
-							  <li>A link to the code/tool with proper documentation on how to run it and replicate the results.</li>
-							</ul>
-
-						  <p>Submit the paper by the deadline using our <a href="https://docs.google.com/forms/d/e/1FAIpQLSfv92ATrx9sobTv8qODNGFo_Hdgk_ArdJUE_mJ7qivpt2KmIA/viewform?usp=sf_link">submission form</a>.</p>
-
-              <p>All submissions must conform to the <a href="https://conf.researchr.org/track/icse-2025/icse-2025-workshops#Call-for-Workshops">ICSE'25 formatting and submission instructions</a> and do not need to be double-blinded.</p>
-
-              <p>Participation in both competitions is allowed, but requires a <b>distinct</b> paper for each submission.</p>
-            -->
-              <h3>Submission acceptance</h3>
-              
-              <p>Submissions will be evaluated and accepted based on <b>correctness</b> and <b>reproducibility</b>, defined by the following criteria:</p>
-
-              <ul>
-                <li>Clarity and detail of the paper content;</li>
-                <li>Availability of the code/tool, including the training/tuning/evaluation pipeline, released as open-source;</li>
-                <li>Correct training/tuning/evaluation of your code/tool on the provided data;</li>
-                <li>Correct report of the metrics and results;</li>
-                <li>Clarity of the code documentation.</li>
-              </ul>
-
-              <p>We will use a formula to rank the competition submissions and determine a winner, see details in the <a href="https://colab.research.google.com/drive/1GhpyzTYcRs8SGzOMH3Xb6rLfdFVUBN0P#scrollTo=S5oC0iUlxHzz">Google Colab notebook</a>.</p>
-
-              <p>The accepted submissions will be <b>published at the workshop proceedings</b>.</p>
-
-
-
-
-
-
-							<!--<p>Submissions will be evaluated and accepted based on <b>correctness</b> and <b>reproducibility</b>, defined by the following criteria:</p>
-								<ul>
-								   <li>Clarity and detail of the paper content;</li>
-								   <li>Availability of the code/tool, including the training/tuning/evaluation pipeline, released as open-source;</li>
-								   <li>Correct training/tuning/evaluation of your code/tool on the provided data;</li>
-                   <li>Correct report of the metrics and results;</li>
-								   <li>Clarity of the code documentation.</li>
-								</ul>
-
-							<p>The accepted submissions will be <b>published at the workshop proceedings</b>.</p>
-
-							<h6>Issue Report Classification</h6>
-              <p>
-                Participants will submit a set of multi-class classifiers and the submissions will be ranked based on the average F1 score achieved by the proposed classifiers on the <a href="https://github.com/nlbse2025/issue-report-classification">issue report test set</a>, as indicated in the papers.
-              </p>
-              <p>
-                The submission with the highest F1 score will be the <b>winner</b> of the issue report classification competition.
-              </p>
-
-              <h6>Code Comment Classification</h6>
-              <p>
-                Since participants will submit a set of binary classifiers (based on a single DL model -- see more details in our <b><a href="https://colab.research.google.com/drive/1GhpyzTYcRs8SGzOMH3Xb6rLfdFVUBN0P?usp=sharing">notebook</a></b>), we will use a formula to rank the competition submissions and determine a winner.
-              </p>
-
-              <p>
-                  The formula, specified in our notebook, accounts for: (1) the overall averaged F1 score achieved by the classifiers, and (2) the average runtime the proposed model takes to predict the category of the test set instances.
-              </p>
-              <p>
-                 The submission with the highest score, determined by our formula, will be the winner of the competition.
-              </p> -->
-
-              <h3 id="citing">Citing relevant work</h3>
-              
-              <p>Please cite if participating:</p>
-              
-              <pre><code class="language-tex">@article{rani2021,
-                title={How to identify class comment types? A multi-language approach for class comment classification},
-                author={Rani, Pooja and Panichella, Sebastiano and Leuenberger, Manuel and Di Sorbo, Andrea and Nierstrasz, Oscar},
-                journal={Journal of systems and software},
-                volume={181},
-                pages={111047},
-                year={2021},
-                publisher={Elsevier}
-              }</code></pre>
-              
-              <pre><code class="language-tex">@INPROCEEDINGS{AlKaswan2023,
-                author={Al-Kaswan, Ali and Izadi, Maliheh and Van Deursen, Arie},
-                booktitle={2023 IEEE/ACM 2nd International Workshop on Natural Language-Based Software Engineering (NLBSE)}, 
-                title={STACC: Code Comment Classification using SentenceTransformers}, 
-                year={2023},
-                pages={28-31}
-              }</code></pre>
-              
-              <pre><code class="language-tex">@inproceedings{pascarella2017,
-                title={Classifying code comments in Java open-source software systems},
-                author={Pascarella, Luca and Bacchelli, Alberto},
-                booktitle={2017 IEEE/ACM 14th International Conference on Mining Software Repositories (MSR)},
-                year={2017},
-                organization={IEEE}
-              }</code></pre>
-              
               <!--<p>
                 Since you will be using the dataset and possibly the original work behind the dataset, please cite the following references in your paper:
               </p>
@@ -486,27 +332,30 @@
                             <h4  class="subsection">Important Dates</h4>
                             
                             <h6 class="text-primary">Paper/tool submission</h6>
-                            <p><b>December 12, 2024</b></span></p>
+                            <p><b>TBA</b></span></p>
                             
                             <h6 class="text-primary">Acceptance notification</h6>
-                            <p><b>January 09, 2025</b></p>
+                            <p><b>TBA</b></p>
                             
                             <h6 class="text-primary">Camera-ready paper submission</h6>
-                            <p><b>January 30, 2025</b></p>
+                            <p><b>TBA</b></p>
                             
 
 							              All dates are Anywhere on Earth (<a href="https://time.is/Anywhere_on_Earth">AoE</a>).
 
-
+                        
                             <h4  class="subsection">Important Links</h4>
 
+                            <p>TBA</p>
+
+<!--
                             <p><a href="https://docs.google.com/forms/d/1USkKLzKAm3TQZKOzHq8unOLuOHNyJapayMhPTEWHKgo/edit">Submission form</a></p>
 
                             <p><a href="https://colab.research.google.com/drive/1GhpyzTYcRs8SGzOMH3Xb6rLfdFVUBN0P#scrollTo=S5oC0iUlxHzz">Google Colab notebook</a></p>
 
                             <p><a href="https://github.com/nlbse2026/code-comment-classification">GitHub repository</a></p>
 
-                          
+                        -->
 
                             
                             
