@@ -31,6 +31,28 @@
       margin-left: 0;
       margin-right: 0;
     }
+    
+    /* Additional mobile responsiveness fixes */
+    @media (max-width: 768px) {
+      .container {
+        padding-left: 10px;
+        padding-right: 10px;
+      }
+      .col-md-8, .col-md-4 {
+        padding-left: 10px;
+        padding-right: 10px;
+      }
+      h1.title {
+        font-size: 2rem;
+      }
+      h4.subsection {
+        font-size: 1.25rem;
+      }
+      p, li {
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+      }
+    }
   </style>
 </head>
 
