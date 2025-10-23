@@ -1,0 +1,434 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+<link rel="apple-touch-icon" sizes="76x76" href="/img/apple-icon.png">
+<link rel="icon" type="image/png" href="/img/nlbse-2026.ico">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<title>Tool Competitions - Natural Language-Based Software Engineering</title>
+<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no' name='viewport' />
+
+<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,200" rel="stylesheet" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+<link href="/css/bootstrap.min.css" rel="stylesheet" />
+<link href="/css/now-ui-kit.css?v=1.1.0" rel="stylesheet" />
+<link href="/css/demo.css" rel="stylesheet" />
+<link href="/css/sbst.css" rel="stylesheet" />
+<link rel="stylesheet" href="/css/highlight.min.css">
+
+<style>
+  body, html {
+    overflow-x: hidden;
+    max-width: 100%;
+  }
+  .container {
+    max-width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .row {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  
+  @media (max-width: 768px) {
+    .container {
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+    .col-md-8, .col-md-4 {
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+    h1.title {
+      font-size: 2rem;
+    }
+    h4.subsection {
+      font-size: 1.25rem;
+    }
+    p, li {
+      word-wrap: break-word;
+      overflow-wrap: break-word;
+    }
+  }
+
+</style>
+
+
+  </head>
+  
+  <body class="landing-page sidebar-collapse">
+    <nav class="navbar navbar-expand-lg bg-primary fixed-top navbar-transparent " color-on-scroll="400">
+    <div class="container">
+        <div class="navbar-translate">
+            <a class="navbar-brand" href="/index.html"  rel="tooltip" title="" data-placement="bottom">
+                NL-Based Software Engineering
+            </a>
+            <button class="navbar-toggler navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-bar bar1"></span>
+                <span class="navbar-toggler-bar bar2"></span>
+                <span class="navbar-toggler-bar bar3"></span>
+            </button>
+        </div>
+        <div class="collapse navbar-collapse justify-content-end" id="navigation" data-nav-image="/img/blurred-image-1.jpg">
+          <ul class="navbar-nav  ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="/organisation/">
+                <img src="/img/people.png" height="19px" width="19px">
+                <span>Organization</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/tools/">
+                <img src="/img/debug.png" height="16px" width="16px">
+                <span>Tool Competition</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/keynotes/">
+                  <img src="/img/calendar.png" height="13px" width="13px">
+                <span>Keynote &amp; Tutorial</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/program/">
+                  <img src="/img/calendar.png" height="13px" width="13px">
+                <span>Program</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/social-event/">
+                  <img src="/img/location.png" height="15px" width="15px">
+                <span>Social event</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/venue/">
+                  <img src="/img/location.png" height="15px" width="15px">
+                <span>Venue</span>
+              </a>
+            </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+    
+    <div class="wrapper">
+      <div class="page-header page-header-small" filter-color="blue" style="min-height: 430px;">
+    <div class="page-header-image" data-parallax="true" style="background-image: url('/img/Skyline.jpg');">
+    </div>
+    
+    <div class="container" style="padding-top: 140px;"> 
+      <div class="content-center">
+            <h1 class="title" style="margin-bottom: 20px;">NLBSE 2026</h1>
+            <div class="text-center">
+               <h5 style="margin-bottom: 15px; line-height: 1.3;">The 5th International Workshop on<br>Natural Language-based Software Engineering</h5>
+                       <h5 style="margin-bottom: 25px;">12-13 April 2026, Rio de Janeiro, Brazil </h5>
+                
+                <a href="https://twitter.com/NLBSE_workshop" class="btn btn-primary btn-icon btn-round"> 
+                    <i class="fa-brands fa-x-twitter" style="position: relative; top: 10px;"></i>
+                </a>
+                
+                <a rel="me" href="https://mastodon.social/@nlbse_workshop" class="btn btn-primary btn-icon btn-round">
+                    <i class="fa-brands fa-mastodon" style="position: relative; top: 10px;"></i>
+                </a>
+            </div>
+      </div>
+    </div>
+</div>
+      
+      <div class="section">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 col-sm-12 ml-auto mr-auto text-left">
+
+                <h2 class="title">Tool Competitions</h2>
+
+                <h3>Introduction</h3>
+                <p>NLP-based approaches and tools have been proposed to improve the efficiency of software engineers, processes, and products, by automatically processing natural language artifacts (issues, emails, commits, etc.).</p>
+
+                <p>We believe that the availability of accurate tools is becoming increasingly necessary to improve Software Engineering (SE) processes. Two important processes are (i) code comment classification where developers have to understand, classify, prioritize, assign, etc. incoming issues and code comments reported by end-users and developers and (ii) skill classification where developers build and assess multi‑label classifiers that predict, for each issue, the set of domains and sub‑domains representing the skills required to solve it.</p>
+
+                <p>We are pleased to announce the fifth edition of the NLBSE'26 tool competition on <b>code comment classification</b> and <b>skill classification</b>; two important tasks in issue and code comment management and prioritization.</p>
+
+                <p>You are invited to participate in one or both tool competitions.</p>
+
+                <!-- CODE COMMENT CLASSIFICATION SECTION -->
+                <div style="border: 2px solid #007bff; border-radius: 10px; padding: 20px; margin: 30px 0; background-color: #f8f9fa; text-align: left;">
+                    <h2 class="text-primary">Code Comment Classification Competition</h2>
+                    
+                    <h4>Overview</h4>
+                    <p>The code comment classification competition consists of building and testing a set of three multi-label classification models for class comments in each of target programming languages (Java, Python, Pharo).</p>
+
+                    <h4>Dataset</h4>
+                    <p>We provide a dataset of 9,361 code comment sentences belonging to 18 categories (7 for Java, 5 for Python, and 6 for Pharo), and three baseline classifiers based on Sentence Transformers (<a href="https://github.com/huggingface/setfit" target="_blank">SetFit</a>).</p>
+
+                    <h4>Requirements</h4>
+                    <p>You must train, tune, and evaluate your models on the provided data. We are looking forward to the solutions that outperform our baseline models.</p>
+
+                    <p>Detailed instructions about the competition (data, rules, baseline, results, etc.) can be found in our (<a href="https://github.com/nlbse2026/code-comment-classification" target="_blank">GitHub Repository</a>) and a (<a href="https://colab.research.google.com/drive/15lrENupj9BVy9tVyyeTnB7KdmvTCnbga?usp=sharing" target="_blank">Google Colab Notebook</a>).</p>
+
+                    <h4>Competition Organizers</h4>
+                    <p>The code comment classification competition is organized by: <b>Moritz Mock</b> (momock@unibz.it), <b>Pooja Rani</b> (rani@ifi.uzh.ch)</p>
+
+                    <h4>Participation Requirements</h4>
+                    <p>To participate in the competition, you must train, tune and evaluate your models using the provided training and test sets.</p>
+                    
+                    <p>Additionally, you must write a paper (2-4 pages) describing:</p>
+                    <ul>
+                        <li>The architecture and details of the classification models</li>
+                        <li>The procedure used to pre-process the data</li>
+                        <li>The procedure used to tune the classifiers on the training sets</li>
+                        <li>The results of your classifiers on the test sets</li>
+                        <li>A link to the code/tool with proper documentation on how to run it and replicate the results</li>
+                    </ul>
+                    
+                    <p>Submit the paper by the deadline using our submission form. All submissions must conform to the (<a href="https://conf.researchr.org/track/icse-2026/icse-2026-research-track?#submission-process" target="_blank">ICSE'26 formatting and submission instructions</a>) and do not need to be double-blinded.</p>
+
+                    <h4>Submission Acceptance</h4>
+                    <p>Submissions will be evaluated and accepted based on correctness and reproducibility, defined by the following criteria:</p>
+                    <ul>
+                        <li>Clarity and detail of the paper content</li>
+                        <li>Availability of the code/tool, including the training/tuning/evaluation pipeline, released as open-source</li>
+                        <li>Correct training/tuning/evaluation of your code/tool on the provided data</li>
+                        <li>Correct report of the metrics and results</li>
+                        <li>Clarity of the code documentation</li>
+                    </ul>
+
+                    <p>We will use a formula to rank the competition submissions and determine a winner, see details in the 
+                    <a href="https://colab.research.google.com/drive/15lrENupj9BVy9tVyyeTnB7KdmvTCnbga?usp=sharing" target="_blank">Google Colab notebook</a>.</p>
+                    <p>The accepted submissions will be published at the workshop proceedings.</p>
+                </div>
+
+                <!-- SKILL CLASSIFICATION SECTION -->
+                <div style="border: 2px solid #28a745; border-radius: 10px; padding: 20px; margin: 30px 0; background-color: #f8fff8; text-align: left;">
+                    <h2 class="text-success">Skill Classification Competition</h2>
+                    
+                    <h4>Competition Overview</h4>
+                    <p>The 2026 competition consists of building and assessing multi‑label classifiers that predict, for each issue, the set of domains and sub‑domains representing the skills required to solve it.</p>
+
+                    <h4>Dataset</h4>
+                    <p>We release a dataset mined from 7,245 merged pull requests across 11 popular Java repositories (57,206 source files; 59,644 methods; 13,097 classes) annotated with 217 skill labels composed by domain/sub‑domains. The full corpus (inputs and gold‑labels) is shipped as an SQLite database (skillscope_data.db) for easy reproducibility.</p>
+
+                    <ul>
+                      <li><code>Ready-made</code> Table: Inside the database you will find a table named nlbse_tool_competition_data_by_issue that joins each pull request's textual and code‑context features with its canonical domain/sub‑domain labels per issue. There is also a view vw_nlbse_tool_competition_data_by_file that labels each filename/function associated with each issue.</li>
+                      <li>The <code>nlbse_tool_competition_data_by_issue</code> table contains a column for each domain and subdomain with an integer count of the number of matching APIs found for that issue. A value greater than zero indicates that domain/subdomain is present in the issue.</li>
+                      <li>The <code>vw_nlbse_tool_competition_data_by_file</code> is present for convenience purposes only and will not be used in evaluation of the model.</li>
+                    </ul>
+
+                    <p>The dataset can be found in our <a href="https://github.com/nlbse2026/skill-classification" target="_blank">Github repository</a>.</p>
+
+                    <h4>Additional Data Usage</h4>
+                    <p>Your model is allowed to use input data that is outside what is given in the database. You may use additional GitHub APIs to fetch more metadata, or download relevant files in an issue for further analysis. However, you must not use any third-party classification engine or the outputs present in skillscope_data.db as direct inputs to the model.</p>
+
+                    <h4>Baselines</h4>
+                    <p>Your models will be compared against the SkillScope Random‑Forest + TF‑IDF baselines reported in the paper by evaluating the overall prediction metrics against the issue classifications as recorded in the nlbse_tool_competition_data_by_issue table. The issue classifications are measured by a binary output (true/false) for the best domain and subdomain describing the issue.</p>
+
+                    <h4>Goal</h4>
+                    <p>Train, tune and evaluate your models on the provided splits and improve at least one of precision, recall, or micro‑F1 while not decreasing the remaining metrics relative to the best baseline.</p>
+
+                    <h4>Competition Organizers</h4>
+                    <p>The skill classification competition is organized by: <b>Fabio Santos</b> (fabio.deabreusantos), <b>Benjamin Carter</b> (BCarter44@my.gcu.edu), and <b>Jacob Penney</b> (jmp458@nau.edu).</p>
+
+                    <h4>Submission Acceptance & Competition</h4>
+                    <p>Submissions will first be filtered to ensure they do not lower any of the three core metrics (<strong>precision</strong>, <strong>recall</strong>, <strong>micro‑F1</strong>) compared with the baseline. Among qualifying submissions, ranking is determined by the largest positive improvement in micro‑F1. Ties will be broken by (1) precision, then (2) runtime.</p>
+
+                    <p>Submissions will be judged on:</p>
+                    <ul>
+                        <li>Clarity and completeness of the paper.</li>
+                        <li>Availability and reproducibility of code/tool (open‑source required).</li>
+                        <li>Correct use of the provided data split.</li>
+                        <li>Correct reporting of metrics.</li>
+                        <li>Quality of documentation.</li>
+                    </ul>
+
+                    <p>Accepted papers will appear in the <strong>NLBSE '26 proceedings</strong>.</p>
+
+                    <h4>Ranking Details</h4>
+                    <p>Participants submit a single multi‑label classifier. Rankings proceed in two stages:</p>
+                    <ol>
+                        <li><strong>Eligibility check:</strong> The submission must not reduce any of precision, recall, or micro‑F1 compared with the baseline.</li>
+                        <li><strong>Ordering:</strong> Qualifying submissions are ordered by the greatest positive ∆micro‑F1.</li>
+                    </ol>
+                </div>
+
+                <div style="text-align: left;">
+                <h3>Citing Relevant Work</h3>
+
+                <h4>General Competition Citation</h4>
+                <p>Please cite if participating:</p>
+                <pre><code class="language-tex">@inproceedings{nlbse2026,
+  author = {Moritz Mock and Rani, Pooja and Santos, Fabio and Carter, Benjamin and Penney, Jacob},
+  title={The NLBSE'26 Tool Competition},
+  booktitle={Proceedings of The 5th International Workshop on Natural Language-based Software Engineering (NLBSE'26)},
+  year={2026}
+}</code></pre>
+
+                <h4>Code Comment Classification Citations</h4>
+                <p>Please cite if participating in the code comment classification competition:</p>
+                <pre><code class="language-tex">@article{rani2021,
+                title={How to identify class comment types? A multi-language approach for class comment classification},
+                author={Rani, Pooja and Panichella, Sebastiano and Leuenberger, Manuel and Di Sorbo, Andrea and Nierstrasz, Oscar},
+                journal={Journal of systems and software},
+                volume={181},
+                pages={111047},
+                year={2021},
+                publisher={Elsevier}
+              }
+
+@INPROCEEDINGS{AlKaswan2023,
+                author={Al-Kaswan, Ali and Izadi, Maliheh and Van Deursen, Arie},
+                booktitle={2023 IEEE/ACM 2nd International Workshop on Natural Language-Based Software Engineering (NLBSE)}, 
+                title={STACC: Code Comment Classification using SentenceTransformers}, 
+                year={2023},
+                pages={28-31}
+              }
+
+@inproceedings{pascarella2017,
+                title={Classifying code comments in Java open-source software systems},
+                author={Pascarella, Luca and Bacchelli, Alberto},
+                booktitle={2017 IEEE/ACM 14th International Conference on Mining Software Repositories (MSR)},
+                year={2017},
+                organization={IEEE}
+              }</code></pre>
+
+                <h4>Skill Classification Citations</h4>
+                <p>Please cite if participating in the skill competition:</p>
+                <pre><code class="language-tex">@inproceedings{carter2025skillscope,
+    title        = {SkillScope: A Tool to Predict Fine-Grained Skills Needed to Solve Issues on GitHub},
+    author       = {Carter, Benjamin C. and Contreras, Jonathan Rivas and Llanes Villegas, Carlos A. and Acharya, Pawan and Utzerath, Jack and Farner, Adonijah O. and Jenkins, Hunter and Johnson, Dylan and Penney, Jacob and Steinmacher, Igor and Gerosa, Marco A. and Santos, Fabio},
+    year         = 2025,
+    booktitle    = {2025 IEEE/ACM International Workshop on Natural Language-Based Software Engineering (NLBSE)},
+    volume       = {},
+    number       = {},
+    pages        = {9--12},
+    doi          = {10.1109/NLBSE66842.2025.00007},
+    keywords     = {Radio frequency;Training;Java;Large language models;Semantics;Retrieval augmented generation;Machine learning;Open source software;Software engineering;Software development management;software engineering;skill categorization;open source software (OSS);machine learning;large language models}
+}</code></pre>
+
+                <pre><code class="language-tex">@article{santos2023tag,
+    title        = {Tag that issue: applying API-domain labels in issue tracking systems},
+    author       = {Santos, Fabio and Vargovich, Joseph and Trinkenreich, Bianca and Santos, Italo and Penney, Jacob and Britto, Ricardo and Pimentel, Jo{\~a}o Felipe and Wiese, Igor and Steinmacher, Igor and Sarma, Anita and others},
+    year         = 2023,
+    journal      = {Empirical Software Engineering},
+    publisher    = {Springer},
+    volume       = 28,
+    number       = 5,
+    pages        = 116
+}
+
+@inproceedings{vargovich2023givemelabeledissues,
+    title        = {Givemelabeledissues: An open source issue recommendation system},
+    author       = {Vargovich, Joseph and Santos, Fabio and Penney, Jacob and Gerosa, Marco A and Steinmacher, Igor},
+    year         = 2023,
+    booktitle    = {2023 IEEE/ACM 20th International Conference on Mining Software Repositories (MSR)},
+    pages        = {402--406},
+    organization = {IEEE}
+}</code></pre>
+                </div>
+
+            </div>
+            <div class="col-md-4 col-sm-12">
+                <h4 class="subsection">Important Dates</h4>
+                
+                <h6 class="text-primary">Paper/tool submission</h6>
+                <p><b>December 19, 2025</b></p>
+                
+                <h6 class="text-primary">Acceptance notification</h6>
+                <p><b>January 12, 2026</b></p>
+                
+                <h6 class="text-primary">Camera-ready paper submission</h6>
+                <p><b>January 26, 2026</b></p>
+                
+                <p>All dates are Anywhere on Earth (<a href="https://time.is/Anywhere_on_Earth">AoE</a>).</p>
+
+                <h4 class="subsection">Important Links</h4>
+
+                <div style="margin-bottom: 20px;">
+                    <strong>Submission Link:</strong> 
+                    <a href="https://docs.google.com/forms/d/1EinwODkpYaEzejk3TCiLxFgPmkwv0J5d1jOkFMePj7Q/edit" target="_blank">
+                        Google Form Submission
+                    </a>
+                </div>
+
+                <div style="margin-bottom: 20px;">
+                    <h6 style="color: #007bff; margin-bottom: 10px; border-bottom: 2px solid #007bff; padding-bottom: 5px;">Code Comment Classification Competition</h6>
+                    <p style="margin-bottom: 5px;">
+                        <strong>GitHub Repository:</strong> 
+                        <a href="https://github.com/nlbse2026/code-comment-classification" target="_blank" style="color: #007bff; text-decoration: none;">
+                            nlbse2026/code-comment-classification
+                        </a>
+                    </p>
+                    <p style="margin-bottom: 5px;">
+                        <strong>Google Colab Instructions:</strong> 
+                        <a href="https://colab.research.google.com/drive/15lrENupj9BVy9tVyyeTnB7KdmvTCnbga?usp=sharing" target="_blank" style="color: #007bff; text-decoration: none;">
+                            Challenge Instructions & Setup
+                        </a>
+                    </p>
+                </div>
+
+                <div style="margin-bottom: 20px;">
+                    <h6 style="color: #28a745; margin-bottom: 10px; border-bottom: 2px solid #28a745; padding-bottom: 5px;">Skill Classification Competition</h6>
+                    <p style="margin-bottom: 5px;">
+                        <strong>GitHub Repository:</strong> 
+                        <a href="https://github.com/nlbse2026/skill-classification" target="_blank" style="color: #28a745; text-decoration: none;">
+                            nlbse2026/skill-classification
+                        </a>
+                    </p>
+                    <p style="margin-bottom: 5px;">
+                        <strong>Dataset:</strong> 
+                        <a href="https://huggingface.co/datasets/NLBSE/SkillCompetition" target="_blank" style="color: #28a745; text-decoration: none;">
+                            Dataset at Hugging Face
+                        </a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+      
+      <footer class="footer" data-background-color="black">
+  <div class="container">
+    <nav>
+      <ul>
+        <li>
+          <a href="/"><i class='fa fa-balance-scale'></i> NLBSE&#39;26</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</footer>
+    </div>
+    
+    <script src="/js/core/jquery.3.2.1.min.js" type="text/javascript"></script>
+<script src="/js/core/popper.min.js" type="text/javascript"></script>
+<script src="/js/core/bootstrap.min.js" type="text/javascript"></script>
+<script src="/js/plugins/bootstrap-switch.js"></script>
+<script src="/js/plugins/nouislider.min.js" type="text/javascript"></script>
+<script src="/js/plugins/bootstrap-datepicker.js" type="text/javascript"></script>
+<script src="/js/now-ui-kit.js?v=1.1.0" type="text/javascript"></script>
+
+<script type="text/javascript">
+    $(document).ready(function() {
+        nowuiKit.initSliders();
+    });
+
+    function scrollToDownload() {
+        if ($('.section-download').length != 0) {
+            $("html, body").animate({
+                scrollTop: $('.section-download').offset().top
+            }, 1000);
+        }
+    }
+</script>
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({ tex2jax: { inlineMath: [['$','$'], ['\\(','\\)']] } });
+</script>
+<script async src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_CHTML"></script>
+  </body>
+</html>
