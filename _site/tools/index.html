@@ -133,6 +133,10 @@
                 <a rel="me" href="https://mastodon.social/@nlbse_workshop" class="btn btn-primary btn-icon btn-round">
                     <i class="fa-brands fa-mastodon" style="position: relative; top: 10px;"></i>
                 </a>
+                
+                <a href="https://www.linkedin.com/company/nlbse-workshop/posts/?feedView=all" class="btn btn-primary btn-icon btn-round">
+                    <i class="fa-brands fa-linkedin" style="position: relative; top: 10px;"></i>
+                </a>
             </div>
       </div>
     </div>
@@ -212,7 +216,7 @@
                     <p>We release a dataset mined from 7,245 merged pull requests across 11 popular Java repositories (57,206 source files; 59,644 methods; 13,097 classes) annotated with 217 skill labels composed by domain/sub-domains. The full corpus (inputs and gold-labels) is shipped as an SQLite database (skillscope_data.db) for easy reproducibility.</p>
 
                     <h5>Ready Made Tables:</h5>
-                    <p>Inside the database you will find a table named nlbse_tool_competition_data_by_issue that joins each pull request's textual and code-context features with its canonical domain/sub-domain labels per issue. There is also a view vw_nlbse_tool_competition_data_by_file that labels each filename/function associated with each issue.</p>
+                    <p>Inside the database you will find a table named <code>nlbse_tool_competition_data_by_issue</code> that joins each pull request's textual and code-context features with its canonical domain/sub-domain labels per issue. There is also a view <code>vw_nlbse_tool_competition_data_by_file</code> that labels each filename/function associated with each issue.</p>
                     <ul>
                       <li>The <code>nlbse_tool_competition_data_by_issue</code> table contains a column for each domain and subdomain with an integer count of the number of matching APIs found for that issue. A value greater than zero indicates that domain/subdomain is present in the issue.</li>
                       <li>The <code>vw_nlbse_tool_competition_data_by_file</code> is present for convenience purposes only and will not be used in evaluation of the model.</li>
